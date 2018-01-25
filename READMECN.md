@@ -1,5 +1,11 @@
 # resloader
 
+[![Build Status](https://travis-ci.org/chenyinkai/resloader.svg?branch=master)](https://travis-ci.org/chenyinkai/resloader)
+[![npm](https://img.shields.io/npm/v/resloader.svg)](https://www.npmjs.com/package/resloader)
+[![npm](https://img.shields.io/npm/dt/resloader.svg)](https://www.npmjs.com/package/resloader)
+[![npm](https://img.shields.io/npm/l/resloader.svg)](https://www.npmjs.com/package/resloader)
+[![npm](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standard/standard)
+
 [English](https://github.com/chenyinkai/resloader)
 [中文文档](https://github.com/chenyinkai/resloader/blob/master/READMECN.md)
 
