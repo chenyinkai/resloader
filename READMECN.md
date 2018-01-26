@@ -73,7 +73,7 @@ const options = {
     }
 }
 
-resloader.start(options);
+resloader(options);
 ```
 
 ## options
