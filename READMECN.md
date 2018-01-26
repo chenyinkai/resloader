@@ -78,12 +78,12 @@ resloader.start(options);
 
 ## options
 
-| Option  | Description              | default        | type      | Function Params  Description      |
-| ------- | ----------------------   | -----------    | --------- | ------------------------ |
-| resources     | 预加载的图片集合     | -      | JSON, Array    |           -              |
-| onStart     | 图片开始加载时的回调     | -      | Function    |           total: 预加载的图片总数              |
-| onProgress     | 每一张图片加载完成的回调      | -      | Function    |    currentIndex：已加载的图片数<br> total：预加载图片总数              |
-| onComplete     | 所有图片加载完成的回调       | -      | Function    |    total: 预加载的图片总数 <br> result: 预加载的图片集合(同resources)            |
+| Option         | Description              | default | type         | Function Params  Description      |
+| -------------- | ----------------------   | ------- | ------------ | ------------------------ |
+| resources      | 预加载的图片集合          | -        | JSON, Array  |           -              |
+| onStart        | 图片开始加载时的回调       | -       | Function     |   total: 预加载的图片总数              |
+| onProgress     | 每一张图片加载完成的回调   | -       | Function     |   currentIndex：已加载的图片数<br> total：预加载图片总数              |
+| onComplete     | 所有图片加载完成的回调     | -       | Function     |   total: 预加载的图片总数 <br> result: 预加载的图片集合(同resources)   |
 
 
 
