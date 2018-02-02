@@ -125,19 +125,19 @@
             resources: imgData, //resources expected a JSON or Array
             onStart: function(total) {
                 console.log('onStart:' + total)
-                document.querySelector(".status > span").innerHTML = 'onStart'
+                document.querySelector('.status > span').innerHTML = 'onStart'
             },
             onProgress: function(currentIndex, total) {
                 console.log('onProgress:' + currentIndex + '/' + total)
-                document.querySelector(".status > span").innerHTML = 'onProgress'
-                document.querySelector(".division > span").innerHTML = currentIndex + '/' + total
-                document.querySelector(".percent > span").innerHTML = Math.floor((currentIndex / total) * 100) + '%'
-                document.querySelector(".progress").style.width = Math.floor((currentIndex / total) * 100) + '%'
+                document.querySelector('.status > span').innerHTML = 'onProgress'
+                document.querySelector('.division > span').innerHTML = currentIndex + '/' + total
+                document.querySelector('.percent > span').innerHTML = Math.floor((currentIndex / total) * 100) + '%'
+                document.querySelector('.progress').style.width = Math.floor((currentIndex / total) * 100) + '%'
             },
             onComplete: function(total,result) {
                 console.log('onComplete:' + total)
                 console.log(result)
-                document.querySelector(".status > span").innerHTML = 'onComplete'
+                document.querySelector('.status > span').innerHTML = 'onComplete'
             }
         }
         

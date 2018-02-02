@@ -13,7 +13,7 @@
 
 > A image preloaded plugin and can display the loaded image progress bar
 
-[demo](https://chenyinkai.github.io/Pages/resloader/example/progress.html)
+[DEMO](https://chenyinkai.github.io/Pages/resloader/example/progress.html)
 
 ### Install
 

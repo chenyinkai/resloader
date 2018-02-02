@@ -13,9 +13,9 @@
 
 > 实现图片的预加载功能，并且可以查看图片的加载进度
 
-[demo](https://chenyinkai.github.io/Pages/resloader/example/progress.html)
+[DEMO](https://chenyinkai.github.io/Pages/resloader/example/progress.html)
 
-### Install
+### 安装及引入
 
 **Install resloader**
 
@@ -41,7 +41,7 @@ or link as a script in an html file.
 <script src="dist/resloader.js"></script>
 ```
 
-### Usage
+### 使用
 
 ```js
 // imageData 可以是json
@@ -76,7 +76,7 @@ const options = {
 resloader(options);
 ```
 
-## options
+## options 参数描述
 
 | Option         | Description              | default | type         | Function Params  Description      |
 | -------------- | ----------------------   | ------- | ------------ | ------------------------ |

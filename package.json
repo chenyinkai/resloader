@@ -1,6 +1,6 @@
 {
   "name": "resloader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A image preload plugin and can display the loaded image progress bar",
   "main": "index.js",
   "scripts": {
