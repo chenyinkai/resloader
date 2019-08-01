@@ -57,10 +57,10 @@ let imageData = [{
     url: imageUrl
 }，{
     name: audio,
-    url: audioUrl             
+    url: audioUrl
 }]
 // or imageData can be an Array
-let imageData = [imageUrl, imageUrl, imageUrl,audioUrl]
+let imageData = [imageUrl, imageUrl, imageUrl, audioUrl]
 
 const options = {
     resources: imageData, //imageData expected a JSON or Array
@@ -85,10 +85,8 @@ resloader(options);
 | ------- | ----------------------   | -----------    | --------- | ------------------------ |
 | resources     | preload images/audio data | -      | JSON, Array    |           -              |
 | onStart     | callback when  preload on started   | -      | Function    |           total: preload images total              |
-| onProgress     | callback when  preload on loading      | -      | Function    |    currentIndex：loaded images number<br> total：preload images total              |
+| onProgress     | callback when  preload on loading      | -      | Function    |    currentIndex：loaded images number <br> total：preload images total              |
 | onComplete     | callback when  preload on complete        | -      | Function    |    total: preload images total <br> result: preload images data(the same as resources)            |
-
-
 
 ### LICENSE
 
