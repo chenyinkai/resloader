@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>resloader</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        body{
+        
+        body {
             overflow: hidden;
             padding: 0 3%;
         }
-        .status,.division,.percent{
+        
+        .status,
+        .division,
+        .percent {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -23,20 +28,24 @@
             border-bottom: 1px solid #666;
             line-height: 50px;
         }
-        .status{
+        
+        .status {
             margin-top: 50px;
         }
-        .progress-box{
+        
+        .progress-box {
             margin-top: 20px;
         }
-        .progress{
+        
+        .progress {
             /* width: 100%; */
             height: 10px;
             background-color: aqua;
             border-radius: 10px;
             margin-top: 10px;
         }
-        .toDemo{
+        
+        .toDemo {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,12 +54,14 @@
             border-radius: 10px;
             height: 50px;
         }
-        .tips{
+        
+        .tips {
             color: red;
             margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
     <div class="status">
         <b>status : </b>
@@ -75,50 +86,47 @@
     <script type="text/javascript" src="../dist/resloader.js"></script>
     <script>
         const imgData = [{
-            name:'image1',
-            url:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1518495118,3948426373&fm=27&gp=0.jpg'
+            name: 'image3',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392399&di=3e958789e1685ae501a894bf933d7ea3&imgtype=0&src=http%3A%2F%2Fpic.paopaoche.net%2Fup%2F2015-8%2F201508081137037657133.jpg'
         }, {
-            name:'image2',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517365112&di=f9f384a13bd6515934d8d96e57f321f0&imgtype=jpg&er=1&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fbd315c6034a85edf514b70294f540923dc5475f1.jpg'
+            name: 'image4',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392398&di=816ccd32ede4c783f68d7decf9c4a982&imgtype=0&src=http%3A%2F%2Fpic29.nipic.com%2F20130516%2F9908857_100518264179_2.jpg'
         }, {
-            name:'image3',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392399&di=3e958789e1685ae501a894bf933d7ea3&imgtype=0&src=http%3A%2F%2Fpic.paopaoche.net%2Fup%2F2015-8%2F201508081137037657133.jpg'
+            name: 'image5',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392398&di=badb10625728f0c083a9b462ec97fefa&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F03%2F173948cgwgppwzzg9p9a7h.jpg'
         }, {
-            name:'image4',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392398&di=816ccd32ede4c783f68d7decf9c4a982&imgtype=0&src=http%3A%2F%2Fpic29.nipic.com%2F20130516%2F9908857_100518264179_2.jpg'
+            name: 'image6',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392397&di=13870306ea946cf0dbe40955b8087df1&imgtype=0&src=http%3A%2F%2Fpic40.nipic.com%2F20140411%2F18313219_065034625116_2.jpg'
         }, {
-            name:'image5',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392398&di=badb10625728f0c083a9b462ec97fefa&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F03%2F173948cgwgppwzzg9p9a7h.jpg'
+            name: 'image7',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392397&di=865831876a3d4258ce617bed60ff364a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd4628535e5dde711c42b5b8fafefce1b9c1661c9.jpg'
         }, {
-            name:'image6',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392397&di=13870306ea946cf0dbe40955b8087df1&imgtype=0&src=http%3A%2F%2Fpic40.nipic.com%2F20140411%2F18313219_065034625116_2.jpg'
+            name: 'image8',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392397&di=9bd1281ead4d585c8758d06d2f7008f8&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F10%2F212446ubi1lijxzjv3n594.jpg'
         }, {
-            name:'image7',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392397&di=865831876a3d4258ce617bed60ff364a&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd4628535e5dde711c42b5b8fafefce1b9c1661c9.jpg'
+            name: 'image9',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392394&di=282aa1477888cdc9214f4aa490a364f3&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201512%2F16%2F170533dyy277kk5uz4y3pk.jpg'
         }, {
-            name:'image8',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392397&di=9bd1281ead4d585c8758d06d2f7008f8&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F10%2F212446ubi1lijxzjv3n594.jpg'
+            name: 'image10',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392394&di=15dcc54ae85b7f27e566e2b70a5e3e48&imgtype=0&src=http%3A%2F%2Fwww.weituic.com%2Fupload%2Fvod%2F2015-07%2F14357667671.jpg'
         }, {
-            name:'image9',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392394&di=282aa1477888cdc9214f4aa490a364f3&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201512%2F16%2F170533dyy277kk5uz4y3pk.jpg'
+            name: 'image11',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392393&di=b773046e35eca94b58c3e73edf401f01&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F9c16fdfaaf51f3dee3a2b49796eef01f3a297934.jpg'
         }, {
-            name:'image10',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392394&di=15dcc54ae85b7f27e566e2b70a5e3e48&imgtype=0&src=http%3A%2F%2Fwww.weituic.com%2Fupload%2Fvod%2F2015-07%2F14357667671.jpg'
+            name: 'image12',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204226&di=b9f75dd0bbe40c29be3301f2d38179b5&imgtype=0&src=http%3A%2F%2Fwww.deskcar.com%2Fdesktop%2Ffengjing%2F2013620224214%2F10.jpg'
         }, {
-            name:'image11',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516770392393&di=b773046e35eca94b58c3e73edf401f01&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F9c16fdfaaf51f3dee3a2b49796eef01f3a297934.jpg'
+            name: 'image13',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204224&di=2749e4d6c841602a1edf030add238fdc&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F06%2F162255nc7s39cb6b7pbp3z.jpg'
         }, {
-            name:'image12',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204226&di=b9f75dd0bbe40c29be3301f2d38179b5&imgtype=0&src=http%3A%2F%2Fwww.deskcar.com%2Fdesktop%2Ffengjing%2F2013620224214%2F10.jpg'
+            name: 'image14',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204384&di=2a70fa4c2fefd17e4be907e6a4e0cb5c&imgtype=0&src=http%3A%2F%2Fimg17.3lian.com%2Fd%2Ffile%2F201703%2F02%2Ff80bdb35783222b0184a5b2bcddf0441.jpg'
         }, {
-            name:'image13',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204224&di=2749e4d6c841602a1edf030add238fdc&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F06%2F162255nc7s39cb6b7pbp3z.jpg'
+            name: 'image15',
+            url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204384&di=d6252959a21e6df029511af6dca129c4&imgtype=0&src=http%3A%2F%2Fi8.17173.itc.cn%2Fv3%2Fdnf%2F2014%2F04%2F30%2F043012115343718734.PNG'
         }, {
-            name:'image14',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204384&di=2a70fa4c2fefd17e4be907e6a4e0cb5c&imgtype=0&src=http%3A%2F%2Fimg17.3lian.com%2Fd%2Ffile%2F201703%2F02%2Ff80bdb35783222b0184a5b2bcddf0441.jpg'
-        }, {
-            name:'image15',
-            url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516937204384&di=d6252959a21e6df029511af6dca129c4&imgtype=0&src=http%3A%2F%2Fi8.17173.itc.cn%2Fv3%2Fdnf%2F2014%2F04%2F30%2F043012115343718734.PNG'
+            name: '翅膀',
+            url: 'http://audio01.dmhmusic.com/71_53_T10038979752_128_4_1_0_sdk-cpm/0206/M00/13/15/ChR47Fn1tKqAbuFqADd7crs2NjY915.mp3?xcode=92c9db4b78648b914d972dbf66c7635a760e4fd'
         }]
 
         const options = {
@@ -134,15 +142,15 @@
                 document.querySelector('.percent > span').innerHTML = Math.floor((currentIndex / total) * 100) + '%'
                 document.querySelector('.progress').style.width = Math.floor((currentIndex / total) * 100) + '%'
             },
-            onComplete: function(total,result) {
+            onComplete: function(total, result) {
                 console.log('onComplete:' + total)
                 console.log(result)
                 document.querySelector('.status > span').innerHTML = 'onComplete'
             }
         }
-        
+
         resloader(options)
-        
     </script>
 </body>
+
 </html>
